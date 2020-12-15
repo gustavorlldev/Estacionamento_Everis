@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/estacionamento2
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+server:
+  port: 8442
+
+application:
+  price:
+    first: 5
+    extra: 2
